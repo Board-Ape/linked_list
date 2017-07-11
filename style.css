@@ -1,0 +1,128 @@
+body {
+  font-family: sans-serif;
+}
+
+header {
+  width: 50%;
+  background-color: #455A64;
+  float: left;
+}
+
+h1 {
+  padding-top: 2.4em;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 800;
+  letter-spacing: .05em;
+  color: #FFF;
+}
+
+.logo {
+  height: 14%;
+  width: 14%;
+  display: inline-blocks;
+}
+
+.website-link {
+  width: 85%;
+  display: block;
+  margin: 2.1em auto;
+  font-size: 1.25em;
+  color: #CFD8DC;
+  padding: .25em;
+}
+
+.enter-button {
+  width: 88%;
+  display: block;
+  margin: 0em auto 10.75em auto;
+  font-size: 1em;
+  color: #FFF;
+  padding: .5em;
+  background-color: #FFC107;
+  font-weight: 700;
+  border: none;
+}
+
+.enter-button:hover {
+  background-color: #FFD773
+}
+
+.all-boxes {
+  width: 50%;
+  float: right;
+  display: inline-block;
+  background-color: #CFD8DC;
+}
+
+.single-box {
+  width: 88%;
+  border: 1px #607D8B solid;
+  background-color: #FFF;
+  padding: .25em;
+  margin: 1.54em auto;
+}
+
+.single-box:hover {
+  background-color: #F2F4F4;
+  text-decoration-color: #CFD8DC;
+}
+
+hr {
+  width: 96%;
+  margin-top: .8em;
+  margin-bottom: .8em;
+  background-color: #CFD8DC;
+  color: #CFD8DC;
+}
+
+h2 {
+  color: #455A64;
+  margin: .25em auto auto .4em;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+a {
+  color: #607D8B;
+  font-size: .9em;
+  font-weight: 300;
+  text-decoration-color: #F2F4F4;
+  margin: auto auto auto .6em;
+}
+
+a:hover {
+  color: #455A64;
+  font-weight: 800;
+  text-decoration-color: #FFC107;
+}
+
+.read-button {
+  color: #607D8B;
+  background-color: #FFF;
+  border: none;
+  text-decoration: underline;
+  text-decoration-color: #F2F4F4;
+  margin: auto auto auto .4em;
+}
+
+.read-button:hover {
+  color: #455A64;
+  font-weight: 800;
+  text-decoration-color: #FFC107;
+}
+
+.delete-button {
+  color: #607D8B;
+  background-color: #FFF;
+  border: none;
+  text-decoration: underline;
+  text-decoration-color: #F2F4F4;
+  float: right;
+}
+
+.read .read-button {
+  color: #F05A28;
+  /*background-color: #f2f4f4 ;*/
+  /*text-decoration-color: #cfd8dc*/
+}
