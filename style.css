@@ -128,9 +128,5 @@ a:hover {
 .read {
   background-color: #F2F4F4;
 }
-
-
-/*.read .read-button .single-box {
-  background-color: #F2F4F4;
-  text-decoration-color: #CFD8DC;
-}*/
+  /*text-decoration-color: #CFD8DC;*/
+@media(max-width)
