@@ -123,6 +123,14 @@ a:hover {
 
 .read .read-button {
   color: #F05A28;
-  /*background-color: #f2f4f4 ;*/
-  /*text-decoration-color: #cfd8dc*/
 }
+
+.read {
+  background-color: #F2F4F4;
+}
+
+
+/*.read .read-button .single-box {
+  background-color: #F2F4F4;
+  text-decoration-color: #CFD8DC;
+}*/

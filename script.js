@@ -1,5 +1,3 @@
-// var $readButton = $('.read-button');
-// var $boxContainer = $('.all-boxes');
 function addCards() {
   var websiteTitle = document.getElementById("website-title").value;
   var websiteURL = document.querySelector("#website-url").value;
@@ -16,7 +14,6 @@ function addCards() {
 function evalInputs() {
   var websiteTitle = document.getElementById("website-title").value;
   var websiteURL = document.querySelector("#website-url").value;
-  var 
 
   if (websiteTitle === "") {
     alert("Please Enter A Website Title");
@@ -34,9 +31,9 @@ document.querySelector(".enter-button").addEventListener('click', function(event
   addCards()
 });
 
-  $('.all-boxes').on('click', '.read-button', function() {
-  console.log('clicked');
-  $(this).parents('.single-box').toggleClass('read')
+$('.all-boxes').on('click', '.read-button', function() {
+  // console.log('clicked');
+  $(this).parents('.single-box').toggleClass('read');
 });
 
 $('.all-boxes').on('click', '.delete-button', function() {
