@@ -1,7 +1,13 @@
 body {
+  height: 100%;
+  width: 100%;
   font-family: sans-serif;
-  max-width: 1080px;
   margin: auto;
+}
+
+.all-boxes {
+  width: 50%;
+  background-color: #CFD8DC;
 }
 
 header {
@@ -151,7 +157,7 @@ a:hover {
   border-color: transparent;
 }*/
   /*text-decoration-color: #CFD8DC;*/
-@media(max-width: 850px) {
+@media(max-width: 900px) {
   header, .all-boxes {
     width: 100%;
     display: block;
