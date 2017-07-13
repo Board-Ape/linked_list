@@ -1,5 +1,7 @@
 body {
   font-family: sans-serif;
+  max-width: 1080px;
+  margin: auto;
 }
 
 header {
@@ -8,34 +10,50 @@ header {
   float: left;
 }
 
+.top-title {
+  height: 100px;
+  width: 85%;
+  display: inline;
+  margin: auto;
+}
+
 h1 {
-  padding-top: 2.4em;
+  padding-top: 3.0em;
   text-align: center;
-  font-size: 3.5em;
+  font-size: 3.3em;
   font-weight: 800;
-  letter-spacing: .05em;
+  letter-spacing: .03em;
   color: #FFF;
+  margin: auto;
 }
 
 .logo {
-  height: 14%;
-  width: 14%;
-  display: inline-blocks;
+  width: 1.3em;
+  margin: auto;
+  display: inline;
 }
 
 .website-link {
+  margin: 2.1em auto;
+}
+
+.website-link, .website-count, .read-count, .unread-count {
   width: 85%;
   display: block;
-  margin: 2.1em auto;
   font-size: 1.25em;
-  color: #CFD8DC;
+  color: #455A64;
   padding: .25em;
 }
 
-.enter-button {
-  width: 88%;
+.website-count, .read-count, .unread-count {
+  background-color: white;
+  margin: .2em auto;
+}
+
+.enter-button, .clear-all-reads {
+  width: 86.5%;
   display: block;
-  margin: 0em auto 10.75em auto;
+  margin: auto auto 2.25em auto;
   font-size: 1em;
   color: #FFF;
   padding: .5em;
@@ -106,10 +124,6 @@ a:hover {
   margin: auto auto auto .4em;
 }
 
-/*.read-button:focus {
-  border-color: none;
-}*/
-
 .read-button:hover {
   color: #455A64;
   font-weight: 800;
@@ -132,24 +146,28 @@ a:hover {
 .read {
   background-color: #F2F4F4;
 }
+
+/*.read:focus {
+  border-color: transparent;
+}*/
   /*text-decoration-color: #CFD8DC;*/
-@media(max-width: 500px) {
+@media(max-width: 850px) {
   header, .all-boxes {
     width: 100%;
     display: block;
     float: none;
   }
   header {
-    height: 600px;
+    height: 675px;
     margin-bottom: 0px;
   }
   .all-boxes {
-    background: #CFD8DC;
+    background-color: #CFD8DC;
     margin: 0px auto;
   }
 
   .single-box {
-    margin-top: 0px;
+    margin-top: 00px;
     height: auto;
   }
 }

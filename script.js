@@ -63,4 +63,7 @@ $('.all-boxes').on('click', '.delete-button', function() {
 $('.clear-all-reads').on('click', function(event) {
   event.preventDefault()
   $('.read').remove()
+  totalCards()
+  totalReads()
+  totalUnreads()
 });
