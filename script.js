@@ -11,6 +11,23 @@ function addCards() {
      </article>`);
 };
 
+function totalCards() {
+  var numWebsites = document.querySelectorAll('.single-box').length
+  $('.website-count').text('Number of Websites Saved: ' + numWebsites);
+};
+
+function totalReads() {
+  var numReads = document.querySelectorAll('.read').length
+  $('.read-count').text('Number of Websites Marked Read: ' + numReads);
+};
+
+function totalUnreads() {
+  var numWebsites = document.querySelectorAll('.single-box').length;
+  var numReads = document.querySelectorAll('.read').length;
+  var numUnreads = numWebsites - numReads;
+  $('.unread-count').text('Number of Websites Marked Unread: ' + numUnreads);
+}
+
 function evalInputs() {
       var websiteTitle = document.querySelector("#website-title").value;
       var websiteURL = document.querySelector("#website-url").value;
@@ -26,12 +43,24 @@ function evalInputs() {
 document.querySelector(".enter-button").addEventListener('click', function(event) {
   event.preventDefault()
   evalInputs()
+  totalCards()
+  totalUnreads()
 });
 
 $('.all-boxes').on('click', '.read-button', function() {
   $(this).parents('.single-box').toggleClass('read');
+  totalReads()
+  totalUnreads()
 });
 
 $('.all-boxes').on('click', '.delete-button', function() {
   $(this).parents('.single-box').remove()
+  totalCards()
+  totalReads()
+  totalUnreads()
+});
+
+$('.clear-all-reads').on('click', function(event) {
+  event.preventDefault()
+  $('.read').remove()
 });
