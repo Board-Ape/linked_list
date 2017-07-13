@@ -1,13 +1,15 @@
 body {
   height: 100%;
   width: 100%;
-  font-family: sans-serif;
-  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #CFD8DC;
 }
 
-header {
+.left-side {
   width: 50%;
-  height: 1000px;
+  height: 100vh;
   background-color: #455A64;
   float: left;
 }
@@ -39,7 +41,10 @@ h1 {
   margin: 2.1em auto;
 }
 
-.website-link, .website-count, .read-count, .unread-count {
+.website-link,
+.website-count,
+.read-count,
+.unread-count {
   width: 85%;
   display: block;
   font-size: 1.25em;
@@ -47,12 +52,15 @@ h1 {
   padding: .25em;
 }
 
-.website-count, .read-count, .unread-count {
+.website-count,
+.read-count,
+.unread-count {
   background-color: white;
   margin: .2em auto;
 }
 
-.enter-button, .clear-all-reads {
+.enter-button,
+.clear-all-reads {
   width: 86.5%;
   display: block;
   margin: auto auto 2.25em auto;
@@ -64,15 +72,20 @@ h1 {
   border: none;
 }
 
+.clear-all-reads {
+  margin-top: 2.25em;
+}
+
 .enter-button:hover {
   background-color: #FFD773
 }
 
 .all-boxes {
   width: 50%;
-  height: 1000px;
+  height: 100vh;
   float: left;
   background-color: #CFD8DC;
+  overflow-y: scroll;
 }
 
 .single-box {
@@ -149,28 +162,22 @@ a:hover {
   background-color: #F2F4F4;
 }
 
-/*.read:focus {
-  border-color: transparent;
-}*/
-  /*text-decoration-color: #CFD8DC;*/
-@media(max-width: 900px) {
-  header, .all-boxes {
-    width: 100%;
-    display: block;
-    float: none;
+@media(min-width: 1600px) {
+  body {
+    width: 90%;
+    margin: auto;
   }
-  header {
-    height: 675px;
-    margin-bottom: 0px;
+  h1 {
+    font-size: 6.0em;
+    padding-top: 2.0em;
   }
-  .all-boxes {
-    background-color: #CFD8DC;
-    margin: 0px auto;
-    padding-top: 30px;
+  h2 {
+    font-size: 2.75em;
   }
-
-  .single-box {
-    margin-top: 00px;
-    height: auto;
+  a {
+    font-size: 1.75em;
+  }
+  .read-button, .delete-button {
+    font-size: 1.5em;
   }
 }
