@@ -2,41 +2,36 @@
 <html>
   <head>
     <title>Linked List</title>
-    <link rel="stylesheet" type="text/css" href="style.css"
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
-    <div class="container">
-
-    <header>
-      <h1>Linked <img class="logo" src="file:///Users/bounce/Downloads/linked-list-logo.svg" alt="Logo for Linked List" /> List</h1>
+    <section class="left-side">
+      <header class="top-title">
+        <h1>Linked <img class="logo" src="file:///Users/bounce/Downloads/linked-list-logo.svg" alt="Logo for Linked List" /> List</h1>
+      </header>
       <form>
-        <input class="website-link" id="website-title" type="text" name="website-title" placeholder="Website Title">
-        <input class="website-link" id="website-url" type="text" name="website-title" placeholder="Website URL">
-        <button class="enter-button" type="submit">Enter</button>
+        <section class="second-block">
+          <input class="website-link" id="website-title" type="text" name="website-title" placeholder="Website Title">
+          <input class="website-link" id="website-url" type="url" name="website-title" placeholder="Website URL">
+          <button class="enter-button" type="submit">Enter</button>
+        </section>
+        <section class="all-counters">
+          <p class="website-count">Websites Saved: 0</p>
+          <p class="read-count">Websites Marked Read: 0</p>
+          <p class="unread-count">Websites Marked Unread: 0</p>
+          <button class="clear-all-reads">Clear All Read</button>
+        </section>
       </form>
-    </header>
-
-    <section class="all-boxes" id="all-boxes">
-      <!-- <article class="single-box" id="single-box">
-        <h2>The Website Title</h2>
-        <hr />
-        <a href="www.thewebsiteurl.com">www.thewebsiteurl.com</a>
-        <hr />
-        <button class="read-button" type="button">Read</button>
-        <button class="delete-button" type="button">Delete</button>
-      </article> -->
     </section>
 
-    </div>
+     <section class="all-boxes" id="all-boxes">
+     </section>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="path/to/your/jquery.min.js"><\/script>')</script>
-
     <script src=script.js></script>
-
   </body>
-
-
 </html>
 
