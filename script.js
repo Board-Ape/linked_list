@@ -48,3 +48,4 @@ $('.all-boxes').on('click', '.read-button', function() {
 $('.all-boxes').on('click', '.delete-button', function() {
   $(this).parents('.single-box').remove()
 });
+
