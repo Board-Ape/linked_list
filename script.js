@@ -12,27 +12,23 @@ function addCards() {
 };
 
 function evalInputs() {
-  var websiteTitle = document.getElementById("website-title").value;
-  var websiteURL = document.querySelector("#website-url").value;
-
-  if (websiteTitle === "") {
-    alert("Please Enter A Website Title");
-    if (_stop) return;
-  } else if (websiteURL === ""){
-    alert("Please Enter A Website URL");
-    if (_stop) return;
-  };
-};
+      var websiteTitle = document.querySelector("#website-title").value;
+      var websiteURL = document.querySelector("#website-url").value;
+      if (websiteTitle === "") {
+        return alert("Please enter a website title.");
+      } else if (websiteURL === "") {
+        return alert ("Pease enter a website URL.");
+      } else {
+        addCards();
+      }
+    };
 
 document.querySelector(".enter-button").addEventListener('click', function(event) {
   event.preventDefault()
-
   evalInputs()
-  addCards()
 });
 
 $('.all-boxes').on('click', '.read-button', function() {
-  // console.log('clicked');
   $(this).parents('.single-box').toggleClass('read');
 });
 

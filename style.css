@@ -129,4 +129,23 @@ a:hover {
   background-color: #F2F4F4;
 }
   /*text-decoration-color: #CFD8DC;*/
-@media(max-width)
+@media(max-width: 500px) {
+  header, .all-boxes {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+  header {
+    height: 600px;
+    margin-bottom: 0px;
+  }
+  .all-boxes {
+    background: #CFD8DC;
+    margin: 0px auto;
+  }
+
+  .single-box {
+    margin-top: 0px;
+    height: auto;
+  }
+}
