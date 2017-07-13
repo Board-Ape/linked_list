@@ -5,13 +5,9 @@ body {
   margin: auto;
 }
 
-.all-boxes {
-  width: 50%;
-  background-color: #CFD8DC;
-}
-
 header {
   width: 50%;
+  height: 1000px;
   background-color: #455A64;
   float: left;
 }
@@ -74,8 +70,8 @@ h1 {
 
 .all-boxes {
   width: 50%;
-  float: right;
-  display: inline-block;
+  height: 1000px;
+  float: left;
   background-color: #CFD8DC;
 }
 
@@ -170,6 +166,7 @@ a:hover {
   .all-boxes {
     background-color: #CFD8DC;
     margin: 0px auto;
+    padding-top: 30px;
   }
 
   .single-box {
