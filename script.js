@@ -77,4 +77,3 @@ $('.clear-all-reads').on('click', function(event) {
   totalReads()
   totalUnreads()
 });
-

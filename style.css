@@ -11,7 +11,6 @@ body {
   width: 50%;
   height: 100vh;
   background-color: #455A64;
-  float: left;
 }
 
 .top-title {
@@ -22,7 +21,7 @@ body {
 }
 
 h1 {
-  padding-top: 3.0em;
+  padding-top: 2.0em;
   text-align: center;
   font-size: 3.3em;
   font-weight: 800;
@@ -82,7 +81,7 @@ h1 {
 
 .all-boxes {
   width: 50%;
-  height: 100vh;
+  height: 50vh;
   float: left;
   background-color: #CFD8DC;
   overflow-y: scroll;
@@ -179,5 +178,16 @@ a:hover {
   }
   .read-button, .delete-button {
     font-size: 1.5em;
+  }
+}
+
+@media(max-width: 875px) {
+  .left-side,
+  .all-boxes {
+    width: 100%;
+  }
+  h1 {
+    margin-top: .5em;
+    padding-top: 0;
   }
 }
